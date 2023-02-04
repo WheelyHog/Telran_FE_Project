@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Zilla+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1169px;
+    margin: 0 auto;
+}
+
+/* section  5*/
+
+#contacts {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+#contacts h1 {
+    margin-bottom: 38px;
+}
+
+.info_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    padding-top: 37px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 24px;
+}
+
+.phone_email {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 24px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.phone img {
+    width: 30px;
+    height: 30px;
+}
+
+.email {
+    display: flex;
+    gap: 18px;
+}
+
+.logo-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.email_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.requisites {
+    padding-top: 42px;
+}
+
+.requisites h6 {
+    width: 94px;
+    height: 21px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 142.19%;
+}
+
+.requisites_info {
+    display: flex;
+    gap: 25px
+}
+
+.requisites_info img {
+    width: 24px;
+    height: 30px;
+}
+
+.span1 {
+    padding-left: 18px
+}
+
+.span2 {
+    padding-left: 10px
+}
+
+input {
+    width: 36px;
+    height: 25px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156.69%;
+    padding: 15px 0 10px 28px;
+    background: #F9F9F9;
+    border: 1px solid #B0B0B0;
+}
+
+.name {
+    margin-bottom: 20px;
+    width: 470px;
+    height: 50px;
+}
+
+.form_email {
+    margin-bottom: 20px;
+    width: 228px;
+    height: 50px;
+    margin-right: 12px;
+}
+
+.form_phone {
+    margin-bottom: 20px;
+    width: 228px;
+    height: 50px;
+}
+
+#agree {
+    width: 438px;
+    height: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 120%;
+    color: #2D2D2D;
+    margin-top: 20px;
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+
+}
+
+.agree {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #2D2D2D;
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+textarea {
+    width: 470px;
+    height: 139px;
+    background: #F9F9F9;
+    border: 1px solid #B0B0B0;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 156.69%;
+    color: #8C8A8A;
+    padding: 20px 0 0 28px;
+
+}
+
+.how-to-get-information h6 {
+    padding-top: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.how-to-get-information p {
+
+    padding-top: 29px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #2D2D2D;
+    text-align: left;
+}
+
+.how-to-get-information p {
+    width: 100%;
+}
+
+.modal_position {
+    position: absolute;
+    z-index: 3;
+    margin-top: 25px;
+    margin-left: 255px;
+}
+
+.actives {
+    display: none;
+}
+
+.modal-window {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 679px;
+    height: 781px;
+    background: rgba(243, 243, 243, 0.1);
+    backdrop-filter: blur(7px);
+}
+
+.btn,
+.btn_Result {
+    display: flex;
+    justify-content: end;
+    width: 500px;
+}
+
+.btnCloseModal {
+    Width: 21.33px;
+    Height: 21.33px;
+    cursor: pointer;
+}
+
+h3 {
+    width: 365px;
+    height: 47px;
+    text-align: left;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 142.19%;
+    color: #2D2D2D;
+    margin-bottom: 26px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.modal-window p {
+    width: 407px;
+    height: 46px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #2D2D2D;
+    margin-bottom: 30px;
+}
+
+.inputNameModal,
+.inputTelModal,
+.inputEmailModal {
+    width: 411px;
+    height: 50px;
+    border: 1px solid #2D2D2D;
+    margin-bottom: 30px;
+    padding: 15px 0px 18px 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    color: #2D2D2D;
+}
+
+.btn_submit,
+.btn_submit_modal {
+    width: 470px;
+    height: 50px;
+    background: #FCB427;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 141.69%;
+    color: #F8F8F8;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_submit_modal {
+    width: 411px;
+    cursor: pointer;
+}
+
+.subfooter {
+    width: 100%;
+    height: 600px;
+}
+
+.result_form {
+    position: absolute;
+    z-index: 2000;
+    margin-top: 25px;
+    margin-left: 280px;
+    width: 620px;
+    height: 403px;
+    background: rgba(243, 243, 243, 0.7);
+    backdrop-filter: blur(7px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.active {
+    display: none;
+}
+
+#result_form h3 {
+    width: 358px;
+    height: 47px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 142.19%;
+    color: #2D2D2D;
+    padding-bottom: 16px;
+}
+
+#result_form p {
+    width: 382px;
+    height: 23px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 142.19%;
+    color: #2D2D2D;
+    padding-bottom: 70px;
+}
+
+.btn_return {
+    width: 220px;
+    height: 50px;
+    border: 1px solid #FFBF1D;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.btn_Result {
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .info_form {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .phone_email {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .email {
+        margin-bottom: 30px;
+    }
+
+    .name,
+    .form_email,
+    .form_phone,
+    #textarea {
+        width: 354px;
+    }
+
+    .btn_submit {
+        max-width: 354px;
+    }
+
+    #agree {
+        max-width: 260px;
+    }
+
+
+    .modal_position {
+        margin-left: 45px;
+    }
+
+    .modal-window {
+        width: 600px;
+    }
+
+    .info_form {
+        padding-left: 20px;
+    }
+
+    .how-to-get-information p,
+    h6 {
+        padding-left: 20px;
+    }
+
+    #result_form {
+        margin-left: 70px;
+    }
+
+    .result_form {
+        margin-top: 15px;
+        margin-left: 75px;
+    }
+}
+
+@media (max-width:390px) {
+
+    #contacts h1 {
+
+        text-align: center;
+        /* padding-left: 20px; */
+    }
+
+    .info_form {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 30px;
+        padding-left: 20px;
+    }
+
+    .name,
+    .form_email,
+    .form_phone,
+    #textarea {
+        width: 320px;
+    }
+
+    .btn_submit {
+        max-width: 320px;
+    }
+
+    .phone_email {
+        width: 290px;
+    }
+
+    .location p {
+        width: 230px;
+    }
+
+    .how-to-get-information p {
+        padding: 40px 0 0 20px;
+        text-align: left;
+    }
+
+    .how-to-get-information h6 {
+        padding-left: 20px;
+
+
+    }
+
+    .modal_position {
+        margin-left: 0px;
+    }
+
+    .modal-window {
+        width: 320px;
+        height: 680px;
+        padding-left: 0;
+    }
+
+    .modal-window p {
+        width: 280px;
+        text-align: justify;
+    }
+
+    .inputNameModal,
+    .inputTelModal,
+    .inputEmailModal {
+        width: 280px;
+        height: 50px;
+    }
+
+    .btn_submit_modal {
+        width: 280px;
+    }
+
+    h3 {
+        width: 280px;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    #result_form {
+        width: 280px;
+        margin-left: 0;
+    }
+
+    #result_form h3 {
+        width: 200px;
+        padding-bottom: 80px;
+    }
+
+    #result_form p {
+        width: 220px;
+        text-align: left;
+    }
+
+    .btn_Result {
+        width: 250px;
+    }
+
+    .result_form {
+        margin-top: 25px;
+        margin-left: 0;
+        width: 300px;
+        height: 384px;
+    }
+
+    .result_form p {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}

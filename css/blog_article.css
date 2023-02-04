@@ -1,0 +1,151 @@
+body {
+  background-color: var(--background);
+}
+
+.slider_blog_article {
+  margin-bottom: 120px;
+}
+
+.blog_article .container {
+  overflow: hidden;
+}
+
+.slider_btn_blog {
+  text-align: right;
+  ;
+}
+
+.left_btn_blog,
+.right_btn_blog {
+  cursor: pointer;
+}
+
+.blog_rental_articles {
+  display: flex;
+  gap: 30px;
+  transform: translateX(0px);
+  transition: all 1s;
+}
+
+.conditions_blog_article {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.blog_article_p p {
+  padding-top: 30px;
+}
+
+.blog_article_rent {
+  margin-top: 57px;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+}
+
+.blog_description_rental {
+  padding: 30px;
+}
+
+.blog_description_rental h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 142.19%;
+  color: #2d2d2d;
+}
+
+.blog_description_rental p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+.blog_description_rental button {
+  width: 200px;
+  height: 50px;
+  background: var(--accent);
+  border: none;
+  font-size: 16px;
+  line-height: 141.69%;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.blog_article_h3 {
+  margin-top: 120px;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 142.19%;
+  color: #2d2d2d;
+  margin-bottom: 50px;
+}
+
+.blog_article_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 20px;
+}
+
+.left_blog_article_img img,
+.right_blog_article_img img {
+  width: 100%;
+}
+
+.blog-article-list {
+  margin-bottom: 30px;
+}
+
+.blog_article_p2 p {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156.69%;
+  color: #2d2d2d;
+  padding-bottom: 25px;
+}
+
+.disc {
+  padding-bottom: 25px;
+}
+
+.special_blog_article_p p {
+  padding-bottom: 25px;
+}
+
+.special_blog_article {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 141.69%;
+  color: #2d2d2d;
+  margin-bottom: 35px;
+  margin-top: 25px;
+}
+
+.left_btn_blog,
+.right_btn_blog {
+  border: none;
+  margin-bottom: 40px;
+}
+
+.blog_main_blog {
+  background: #ffffff;
+}
+
+@media (max-width: 960px) {
+  .blog_article_img {
+    flex-direction: column;
+  }
+}

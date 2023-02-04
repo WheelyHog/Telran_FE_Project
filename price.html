@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Telran_FE_Project</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css_price/price.css">
+</head>
+
+<body>
+	<div class="order">
+		<div class="button-container">
+			<button class="order-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="order-title">Арендовать спецтехнику</h3>
+		<p class="order-text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+		<input type="text" class="order-input" placeholder="Ваше имя" required>
+		<input type="number" class="order-input" placeholder="Ваш телефон*" required>
+		<input type="email" class="order-input" placeholder="Ваша почта" required>
+		<div class="agreement">
+			<input type="checkbox" checked class="order-check">
+			<p>Я согласен с условиями обработки и использования моих персональных данных</p>
+		</div>
+		<button class="order-btn">Оставить заявку</button>
+	</div>
+
+	<div class="order-report">
+		<div class="button-container">
+			<button class="report-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="report-title">Ваша заявка отправлена</h3>
+		<p class="report-text">Мы позвоним вам в самое ближайшее время</p>
+		<button class="report-return">Вернуться</button>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
+					<p class="logo-text">Аренда спецтехники LIEBHERR c 2000 года</p>
+				</div>
+				<div class="header-wrapper">
+					<div class="header-item">
+						<div class="header-item-img">
+							<img src="images/clock.png" alt="">
+						</div>
+						<p>10:00-17:00</p>
+					</div>
+					<div class="header-item">
+						<div class="header-item-img">
+							<img src="images/location.png" alt="">
+						</div>
+						<p>г. Москва,
+							ул. Куликовская, 12</p>
+					</div>
+					<div class="header-item">
+						<button class="header-btn call-btn">Свяжитесь со мной</button>
+					</div>
+					<div class="header-item item-show">
+						<div class="header-item-img">
+							<img src="images/phone.png" alt="">
+						</div>
+						<ul class="phone-list">
+							<li class="phone-item"><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+							<li class="phone-item"><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+							<li class="phone-item"><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="menu-wrapper">
+				<div class="menu">
+					<button class="menu-btn">
+						<div class="menu-btn-line"></div>
+						<div class="menu-btn-line"></div>
+						<div class="menu-btn-line"></div>
+					</button>
+					<ul class="menu-list">
+						<li class="menu-item"><a href="catalog.html">Каталог</a></li>
+						<li class="menu-item"><a href="services.html">Услуги</a></li>
+						<li class="menu-item"><a href="about.html">О компании</a></li>
+						<li class="menu-item"><a href="objects.html">Объекты</a></li>
+						<li class="menu-item"><a href="price.html">Цены</a></li>
+						<li class="menu-item"><a href="blog.html">Блог</a></li>
+						<li class="menu-item"><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+
+				<ul class="menu-mobile-list" id="mobile-list">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="objects.html">Объекты</a></li>
+					<li><a href="price.html">Цены</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+
+				<div class="search">
+					<input type="text" class="input-search">
+					<img src="images/magnifying-glass.png" alt="" class="input-icon">
+				</div>
+			</div>
+
+
+			<div class="breadcrumbs">
+				<div class="breadcrumbs-inner">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list-item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs-list-item">
+							<span>Прайс-лист</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<section class="price">
+			<div class="container">
+				<h1 class="price-title accent-header">Прайс-лист на аренду спецтехники ООО "Компания ЕвроКран"</h1>
+				<p class="price-p">Прайс-лист на объем работ (1 м/смена) по городу Москве автокранов:</p>
+				<h2 class="price-subtitle accent-header">Аренда мобильных кранов LIEBHERR LTM</h2>
+				<div class="price-table">
+					<div class="price-table-header">
+						<div class="price-header-item">Автомобильный кран</div>
+						<div class="price-header-item">Грузоподъемность</div>
+						<div class="price-header-item">Длинна стрелы + гусек</div>
+						<div class="price-header-item">
+							Стоимость услуг за смену
+							8 часов + доставка</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1040</div>
+						<div class="price-table-row-item">40 тонн</div>
+						<div class="price-table-row-item">35м+14м</div>
+						<div class="price-table-row-item">42 480</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1050</div>
+						<div class="price-table-row-item">50 тонн</div>
+						<div class="price-table-row-item">38м+16м</div>
+						<div class="price-table-row-item">42 480</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1060</div>
+						<div class="price-table-row-item">60 тонн</div>
+						<div class="price-table-row-item">48м+16м</div>
+						<div class="price-table-row-item">55 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1070</div>
+						<div class="price-table-row-item">70 тонн</div>
+						<div class="price-table-row-item">42м+16м</div>
+						<div class="price-table-row-item">60 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1080</div>
+						<div class="price-table-row-item">80 тонн</div>
+						<div class="price-table-row-item">48м+19м</div>
+						<div class="price-table-row-item">70 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1090</div>
+						<div class="price-table-row-item">90 тонн</div>
+						<div class="price-table-row-item">50м+19м</div>
+						<div class="price-table-row-item">93 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1095</div>
+						<div class="price-table-row-item">95 тонн</div>
+						<div class="price-table-row-item">58м+19м</div>
+						<div class="price-table-row-item">100 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1100</div>
+						<div class="price-table-row-item">100 тонн</div>
+						<div class="price-table-row-item">52м+19м</div>
+						<div class="price-table-row-item">105 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1120</div>
+						<div class="price-table-row-item">120 тонн</div>
+						<div class="price-table-row-item">56м+22м</div>
+						<div class="price-table-row-item">115 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1150</div>
+						<div class="price-table-row-item">150 тонн</div>
+						<div class="price-table-row-item">56м+22м</div>
+						<div class="price-table-row-item">цена по запросу</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1160</div>
+						<div class="price-table-row-item">160 тонн</div>
+						<div class="price-table-row-item">62м+22м</div>
+						<div class="price-table-row-item">140 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1200</div>
+						<div class="price-table-row-item">200 тонн</div>
+						<div class="price-table-row-item">72м+22м</div>
+						<div class="price-table-row-item">170 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1220</div>
+						<div class="price-table-row-item">220 тонн</div>
+						<div class="price-table-row-item">60м+36м</div>
+						<div class="price-table-row-item">цена по запросу</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1250</div>
+						<div class="price-table-row-item">250 тонн</div>
+						<div class="price-table-row-item">72м+22м</div>
+						<div class="price-table-row-item">220 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1300</div>
+						<div class="price-table-row-item">300 тонн</div>
+						<div class="price-table-row-item">60м+70м</div>
+						<div class="price-table-row-item">452 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1350</div>
+						<div class="price-table-row-item">350 тонн</div>
+						<div class="price-table-row-item">70м+78м</div>
+						<div class="price-table-row-item">480 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1400</div>
+						<div class="price-table-row-item">400 тонн</div>
+						<div class="price-table-row-item">60м+84м</div>
+						<div class="price-table-row-item">680 000</div>
+					</div>
+					<div class="price-table-row">
+						<div class="price-table-row-item">LIEBHERR LTM 1500</div>
+						<div class="price-table-row-item">500 тонн</div>
+						<div class="price-table-row-item">50м+91м</div>
+						<div class="price-table-row-item">780 000</div>
+					</div>
+				</div>
+				<h2 class="price-subtitle accent-header">Аренда гусеничных кранов LIEBHERR LR</h2>
+				<div class="price-table">
+					<div class="price-table-header-small">
+						<div class="price-header-item">Гусеничный кран</div>
+						<div class="price-header-item">Грузоподъемность</div>
+						<div class="price-header-item">
+							Стоимость услуг за смену
+						</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1130</div>
+						<div class="price-table-row-item">130 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1160</div>
+						<div class="price-table-row-item">160 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1200</div>
+						<div class="price-table-row-item">200 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1250</div>
+						<div class="price-table-row-item">250 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1280</div>
+						<div class="price-table-row-item">280 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1300</div>
+						<div class="price-table-row-item">300 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1350</div>
+						<div class="price-table-row-item">350 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+					<div class="price-table-row-small">
+						<div class="price-table-row-item">LIEBHERR LR 1750</div>
+						<div class="price-table-row-item">750 тонн</div>
+						<div class="price-table-row-item">Договорная</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+		<section class="rent">
+
+			<img class="rent-top-line" src="images/rent/top-line.png" alt="">
+
+			<div class="container">
+				<h2 class="rent-header accent-header">Из чего складывается стоимость аренды</h2>
+				<div class="rent-items">
+					<div class="rent-item">
+						<div class="rent-item-title rent1">
+							<h4>01</h4>
+						</div>
+						<p class="rent-item-text">Стоимость аренды крана определяется так: 8 (восемь) часов работы каждой единицы
+							спецтехники в течение смены.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent2">
+							<h4>02</h4>
+						</div>
+						<p class="rent-item-text">География доставки спецтехники – вся территория РФ и страны СНГ.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent3">
+							<h4>03</h4>
+						</div>
+						<p class="rent-item-text">Стоимость мобилизации и демобилизации за МКАД и на территорию в границах ТТК
+							обговаривается индивидуально и требует дополнительной оплаты.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent4">
+							<h4>04</h4>
+						</div>
+						<p class="rent-item-text">Обозначенная в прайс-листе стоимость услуг включает НДС – 20 %.</p>
+					</div>
+
+				</div>
+			</div>
+
+			<img class="rent-bottom-line" src="images/rent/bottom-line.png" alt="">
+
+		</section>
+
+		<section class="price-rent">
+			<div class="container">
+				<ul class="about-rent-list">
+					<li class="about-rent-list-item">
+						<div><img src="images/list-img.png" alt=""></div>
+						<div>
+							<p>Стоимость аренды крана определяется так: 8 (восемь) часов работы каждой единицы спецтехники в течение
+								смены.</p>
+						</div>
+					</li>
+					<li class="about-rent-list-item">
+						<div><img src="images/list-img.png" alt=""></div>
+						<div>
+							<p>География доставки спецтехники – вся территория РФ и страны СНГ.</p>
+						</div>
+					</li>
+					<li class="about-rent-list-item">
+						<div><img src="images/list-img.png" alt=""></div>
+						<div>
+							<p>Стоимость мобилизации и демобилизации за пределы МКАД и на территорию в границах третьего транспортного
+								кольца обговаривается индивидуально и требует дополнительной оплаты.</p>
+						</div>
+					</li>
+					<li class="about-rent-list-item">
+						<div><img src="images/list-img.png" alt=""></div>
+						<div>
+							<p>Обозначенная в прайс-листе стоимость услуг включает НДС – 20 %. </p>
+						</div>
+					</li>
+				</ul>
+				<div class="price-text-block">
+					<p class="about-rent-text">Заказывая автокран, цена аренды которого зависит от технических характеристик и
+						длительности предполагаемого времени эксплуатации, просим указать точные координаты строительной площадки. В
+						зависимости от удаленности объекта, продолжительности рабочего периода, возможна корректировка стоимости
+						услуги.</p>
+					<p class="about-rent-text">Подача техники происходит оперативно, что чрезвычайно важно при возникновении
+						аварийных или непрогнозируемых ситуаций.</p>
+				</div>
+
+			</div>
+		</section>
+	</main>
+
+	<!-- <div class="subfooter">
+		<img src="images/map.png" alt="">
+	</div> -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-item">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
+					<p class="logo-text">Аренда мобильных и гусеничных кранов LIEBHERR</p>
+
+				</div>
+				<div class="footer-item">
+					<div class="footer-inner">
+						<div class="footer-column">
+							<h4>Клиентам</h4>
+							<ul class="footer-list">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="services.html">Услуги</a></li>
+								<li><a href="catalog.html">Каталог техники</a></li>
+								<li><a href="#">Аренда кранов</a></li>
+								<li><a href="objects.html">Наши работы</a></li>
+								<li><a href="price.html">Прайс-лист</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Техника</h4>
+							<ul class="footer-list">
+								<li><a href="#">Гусеничные краны</a></li>
+								<li><a href="#">Мобильные краны</a></li>
+								<li><a href="#">Низкорамные краны</a></li>
+								<li><a href="#">Модульные платформы</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Услуги</h4>
+							<ul class="footer-list">
+								<li><a href="#">Аренда гусеничного крана</a></li>
+								<li><a href="#">Аренда мобильного крана</a></li>
+								<li><a href="#">Аренда башенного крана</a></li>
+								<li><a href="#">Перевозка негабаритного груза</a></li>
+								<li><a href="#">Разработка ппрк</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-group">
+						<div class="footer-btn-social">
+							<button class="footer-btn call-btn">Свяжитесь со мной</button>
+							<div class="footer-social">
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+								<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+								<a href="#"><i class="fa-brands fa-vk"></i></a>
+								<a href="#"><i class="fa-brands fa-yandex-international"></i></a>
+							</div>
+						</div>
+						<div class="footer-item contacts">
+							<div class="footer-column">
+								<h4>Контакты</h4>
+								<ul class="footer-list">
+									<li><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+									<li><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+									<li><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<p class="copyright">© 2000-2021 Все права защищены</p>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/08aab8acab.js" crossorigin="anonymous"></script>
+	<script src="script_contacts/contacts.js"></script>
+	<script src="js/mobile-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+.price {
+  margin: 100px 0;
+}
+
+.price-title {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+.price-p,
+.price-subtitle {
+  margin-bottom: 30px;
+}
+
+.price-table-header,
+.price-table-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.price-table-header {
+  align-items: center;
+}
+
+.price-table-header-small,
+.price-table-row-small {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.price-table-header,
+.price-table-header-small {
+  padding: 20px 40px;
+  background-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+/* ======================== RENT ================ */
+.rent {
+  margin-bottom: 100px;
+}
+
+.price-table-row,
+.price-table-row-small {
+  padding: 20px 40px;
+  border-bottom: 1px solid #c4c4c4;
+  background-color: #fff;
+}
+
+.price-table {
+  margin-bottom: 50px;
+}
+
+.price-text-block {
+  margin: 50px 0 100px;
+}
+
+@media (max-width: 768px) {
+
+  .price-title,
+  .price-subtitle {
+    font-size: 24px;
+  }
+
+  .price-table-header,
+  .price-table-header-small,
+  .price-table-row,
+  .price-table-row-small {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 520px) {
+
+  .price-table-header,
+  .price-table-header-small {
+    word-break: break-all;
+  }
+}

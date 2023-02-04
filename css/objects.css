@@ -1,0 +1,63 @@
+.objects .container {
+  text-align: center;
+}
+
+.objects-title {
+  font-size: 44px;
+  font-family: var(--headerfont);
+  margin: 100px 0;
+}
+
+.objects-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  background: var(--background);
+  gap: 30px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+.objects-item {
+  max-width: 370px;
+}
+
+.objects-item-img {
+  width: 100%;
+  display: block;
+}
+
+.objects-description {
+  padding: 50px 20px 30px;
+  background-color: #fff;
+  font-size: 18px;
+  min-height: 200px;
+  text-align: left;
+}
+
+.objects-description a{
+  text-decoration: none;
+  color: var(--text);
+}
+
+.objects-btn {
+  background-color: transparent;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid var(--accent);
+  font-family: var(--headerfont);
+  margin-bottom: 100px;
+}
+
+.objects-text {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.objects-subtitle {
+  margin-bottom: 50px;
+}
+
+.objects-text p {
+  margin-bottom: 30px;
+}

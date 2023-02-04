@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Telran_FE_Project</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="order">
+		<div class="button-container">
+			<button class="order-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="order-title">Арендовать спецтехнику</h3>
+		<p class="order-text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+		<input type="text" class="order-input" placeholder="Ваше имя" required>
+		<input type="number" class="order-input" placeholder="Ваш телефон*" required>
+		<input type="email" class="order-input" placeholder="Ваша почта" required>
+		<div class="agreement">
+			<input type="checkbox" checked class="order-check">
+			<p>Я согласен с условиями обработки и использования моих персональных данных</p>
+		</div>
+		<button class="order-btn">Оставить заявку</button>
+	</div>
+
+	<div class="order-report">
+		<div class="button-container">
+			<button class="report-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="report-title">Ваша заявка отправлена</h3>
+		<p class="report-text">Мы позвоним вам в самое ближайшее время</p>
+		<button class="report-return">Вернуться</button>
+	</div>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-inner">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
+					<p class="logo-text">Аренда спецтехники LIEBHERR c 2000 года</p>
+				</div>
+				<div class="header-wrapper">
+					<div class="header-item">
+						<div class="header-item-img">
+							<img src="images/clock.png" alt="">
+						</div>
+						<p>10:00-17:00</p>
+					</div>
+					<div class="header-item">
+						<div class="header-item-img">
+							<img src="images/location.png" alt="">
+						</div>
+						<p>г. Москва,
+							ул. Куликовская, 12</p>
+					</div>
+					<div class="header-item">
+						<button class="header-btn call-btn">Свяжитесь со мной</button>
+					</div>
+					<div class="header-item item-show">
+						<div class="header-item-img">
+							<img src="images/phone.png" alt="">
+						</div>
+						<ul class="phone-list">
+							<li class="phone-item"><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+							<li class="phone-item"><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+							<li class="phone-item"><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar">
+		<div class="container">
+			<div class="menu-wrapper">
+				<div class="menu">
+					<button class="menu-btn">
+						<div class="menu-btn-line"></div>
+						<div class="menu-btn-line"></div>
+						<div class="menu-btn-line"></div>
+					</button>
+					<ul class="menu-list">
+						<li class="menu-item"><a href="catalog.html">Каталог</a></li>
+						<li class="menu-item"><a href="services.html">Услуги</a></li>
+						<li class="menu-item"><a href="about.html">О компании</a></li>
+						<li class="menu-item"><a href="objects.html">Объекты</a></li>
+						<li class="menu-item"><a href="price.html">Цены</a></li>
+						<li class="menu-item"><a href="blog.html">Блог</a></li>
+						<li class="menu-item"><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+
+				<ul class="menu-mobile-list" id="mobile-list">
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="objects.html">Объекты</a></li>
+					<li><a href="price.html">Цены</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+
+				<div class="search">
+					<input type="text" class="input-search">
+					<img src="images/magnifying-glass.png" alt="" class="input-icon">
+				</div>
+			</div>
+
+			<!-- <div class="breadcrumbs">
+				<div class="breadcrumbs-inner">
+					<ul class="breadcrumbs-list">
+						<li class="breadcrumbs-list-item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="breadcrumbs-list-item">
+							<span>Каталог техники</span>
+						</li>
+					</ul>
+				</div>
+			</div>-->
+
+		</div>
+
+	</nav>
+
+	<main>
+
+		<section class="banner-slider">
+			<div class="banner-left">
+				<div class="banner-descr">
+					<div class="banner-top-line"></div>
+					<h1 class="banner-title">Аренда спецтехники Liebherr для любых задач</h1>
+					<p class="banner-text">Мобильные, гусеничные и башенные краны LIEBHERR в аренду для любых задач и грузов.
+						работаем по всей России</p>
+					<button class="banner-call-btn accent-btn call-btn">Заказать звонок</button>
+					<button class="banner-catalog-btn">Каталог техники</button>
+				</div>
+				<button class="banner-left-arrow">
+					<img class="banner-left-img" src="images/arrow-left.svg" alt="">
+				</button>
+			</div>
+			<div class="banner-right">
+				<p class="slider-count"><span class="current">01</span>/<span class="total">04</span></p>
+				<button class="banner-right-arrow">
+					<img class="banner-right-img" src="images/arrow-right.svg" alt="">
+				</button>
+			</div>
+		</section>
+
+		<div class="banner-bottom-bar">
+			<img src="images/banner-slider/bottom-text.png" alt="" class="banner-bottom-text">
+		</div>
+
+
+		<section class="middle-slider">
+			<img src="images/services-bg.png" alt="" class="middle-slider-bg">
+			<div class="container">
+				<h2 class="middle-title accent-header"><span>Спецтехника</span> в аренду</h2>
+				<div class="middle-inner">
+					<div class="middle-img">
+						<img class="middle-slider-img" src="images/middle-slider/middle-1.png" alt="">
+					</div>
+					<div class="middle-descr">
+						<h4 class="middle-descr-title">Гусеничные краны</h4>
+						<p class="middle-descr-text">
+							Аренда гусеничного крана – актуальная услуга для многих строительных площадок. Использование спецтехники
+							существенно упрощает погрузку - выгрузку материалов, оптимизирует рабочий процесс.
+						</p>
+						<a href="catalog.html" class="middle-link accent-link">Выбрать спецтехнику</a>
+						<div class="middle-pagination">
+							<a class="middle-left-link"><img class="middle-left-arrow"
+									src="images/middle-slider/middle-arrow-left-end.png" alt=""></a>
+							<a class="middle-right-link"><img class="middle-right-arrow"
+									src="images/middle-slider/middle-arrow-right.png" alt=""></a>
+						</div>
+						<div class="pagination-bar"></div>
+						<div class="pagination-indicator"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="stability">
+			<div class="container">
+				<h2 class="stability-header accent-header">С нами надежно</h2>
+				<div class="stability-inner">
+					<div class="stability-left">
+						<p>
+							Компания Еврокран успешно работает на территории РФ с 2000 года.
+						</p>
+						<p>
+							В нашем автопарке гусеничные и мобильные краны известного немецкого бренда.
+						</p>
+						<p>
+							Среди них есть модели любой грузоподъемности, для погрузочных, монтажных, транспортировочных и других
+							работ.
+						</p>
+						<p>
+							Обращение в компанию гарантирует комплексный подход к решению поставленных задач. Получить больше
+							информации
+							можно у менеджеров Компании Еврокран.
+						</p>
+						<button class="stability-button accent-btn call-btn">Заказать звонок</button>
+					</div>
+					<div class="stability-right">
+						<div class="stab-item">
+							<img src="images/stab-clock.png" alt="">
+							<p>Поставка техники точно в срок</p>
+						</div>
+						<div class="stab-item">
+							<img src="images/stab-tools.png" alt="">
+							<p>Сопровождение спецтехники</p>
+						</div>
+						<div class="stab-item">
+							<img src="images/stab-man.png" alt="">
+							<p>Квалифицированнные специалисты</p>
+						</div>
+						<div class="stab-item">
+							<img src="images/stab-car.png" alt="">
+							<p>Автопарк от ведущих мировых производителей</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stability-bar">
+				<img src="images/stab-top-bar.png" alt="" class="stability-bar-top">
+				<div class="stab-text-item">
+					<h2>20</h2>
+					<p>лет на рынке</p>
+				</div>
+				<div class="stab-text-item">
+					<h2>1000+</h2>
+					<p>выполненных проектов</p>
+				</div>
+				<div class="stab-text-item">
+					<h2>20+</h2>
+					<p>единиц техники всегда в наличии</p>
+				</div>
+				<img src="images/stab-top-bar.png" alt="" class="stability-bar-bottom">
+			</div>
+
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<h2 class="projects-header accent-header">Реализованные проекты</h2>
+			</div>
+			<div class="projects-pics">
+				<img class="project-img project-active" src="images/projects/project-1a.png" alt="">
+				<img class="project-img" src="images/projects/project-2b.png" alt="">
+				<img class="project-img" src="images/projects/project-3b.png" alt="">
+				<img class="project-img" src="images/projects/project-4b.png" alt="">
+				<img class="project-img" src="images/projects/project-5b.png" alt="">
+				<img class="project-img" src="images/projects/project-6b.png" alt="">
+				<img class="project-img" src="images/projects/project-7b.png" alt="">
+				<img class="project-img" src="images/projects/project-8b.png" alt="">
+			</div>
+			<div class="project-bar"></div>
+			<div class="container">
+				<div class="projects-navigation">
+					<img src="images/middle-slider/middle-arrow-left-end.png" alt="" class="projects-prev">
+					<img src="images/middle-slider/middle-arrow-right.png" alt="" class="projects-next">
+				</div>
+			</div>
+			<div class="projects-slider">
+				<div class="projects-img">
+					<img src="images/projects/project-1.png" alt="" class="projects-slider-img">
+				</div>
+				<div class="projects-descr">
+					<div class="projects-descr-inner">
+						<h2 class="projects-title">Монтаж вакуумных колонн LIEBHERR LR1300 и LIEBHERR LR1750</h2>
+						<h4 class="projects-location"><span><img src="images/location.png" alt=""></span> Калужская обл.,
+							Дзержинский район, пос. Полотняный завод</h4>
+						<div class="projects-text">
+							<p>Монтаж вакуумных колонн К-201 и К-2 «Техническое перевооружение установки АТ-101»
+								Монтаж произведен двумя гусеничными кранами LIEBHERR LR1300 и LIEBHERR LR1750.</p>
+						</div>
+
+						<a href="blog-article.html" class="projects-link">Подробнее<img src="images/readmore-arrow.png" alt=""></a>
+					</div>
+
+				</div>
+			</div>
+			<div class="bottom-title">
+				<p class="bottom-title-text">Eurocran</p>
+			</div>
+		</section>
+
+		<section class="catalog">
+			<div class="container">
+				<h2 class="catalog-title accent-header">Каталог техники</h2>
+				<div class="catalog-navigation">
+					<img src="images/middle-slider/middle-arrow-left-end.png" alt="" class="catalog-prev">
+					<img src="images/middle-slider/middle-arrow-right.png" alt="" class="catalog-next">
+					<div class="catalog-bar">
+						<div class="catalog-progress-bar"></div>
+						<div class="catalog-indicator"></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="catalog-slider-wrapper">
+				<div class="catalog-slider">
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+
+					<div class="catalog-slider-item">
+						<img src="images/catalog/catalog-item.png" alt="" class="catalog-item-img">
+						<div class="slider-item-title">
+							<h3>Гусеничный кран Liebherr LR 1750</h3>
+						</div>
+						<div class="slider-item-descr">
+							<table>
+								<tr>
+									<td>Грузоподъемность:</td>
+									<td>40 тонн</td>
+								</tr>
+								<tr>
+									<td>Длина стрелы:</td>
+									<td>35 м</td>
+								</tr>
+							</table>
+							<a class="catalog-item-link" href="#">Все характеристики<img src="images/readmore-arrow.png" alt=""></a>
+							<a class="catalog-item-btn accent-link call-btn">Арендовать</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="catalog.html" class="catalog-link">Перейти в каталог</a>
+		</section>
+
+		<section class="rent">
+
+			<img class="rent-top-line" src="images/rent/top-line.png" alt="">
+
+			<div class="container">
+				<h2 class="rent-header accent-header">Из чего складывается стоимость аренды</h2>
+				<div class="rent-items">
+					<div class="rent-item">
+						<div class="rent-item-title rent1">
+							<h4>01</h4>
+						</div>
+						<p class="rent-item-text">Стоимость аренды крана определяется так: 8 (восемь) часов работы каждой единицы
+							спецтехники в течение смены.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent2">
+							<h4>02</h4>
+						</div>
+						<p class="rent-item-text">География доставки спецтехники – вся территория РФ и страны СНГ.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent3">
+							<h4>03</h4>
+						</div>
+						<p class="rent-item-text">Стоимость мобилизации и демобилизации за МКАД и на территорию в границах ТТК
+							обговаривается индивидуально и требует дополнительной оплаты.</p>
+					</div>
+					<div class="rent-item">
+						<div class="rent-item-title rent4">
+							<h4>04</h4>
+						</div>
+						<p class="rent-item-text">Обозначенная в прайс-листе стоимость услуг включает НДС – 20 %.</p>
+					</div>
+
+				</div>
+			</div>
+
+			<img class="rent-bottom-line" src="images/rent/bottom-line.png" alt="">
+
+		</section>
+
+		<section class="rent-form">
+			<img src="images/rent/form-bg.png" alt="" class="rent-form-bg">
+			<div class="container">
+				<h2 class="rent-form-title "><span>Оперативно</span> поставим технику</h2>
+				<form class="form-inner">
+					<input class="input-name" type="text" placeholder="Ваше имя">
+					<input class="input-phone" type="text" placeholder="Ваш телефон*">
+					<button class="rent-submit accent-btn">Заказать звонок</button>
+					<div class="agreement">
+						<input type="checkbox" name="" id="" checked>
+						<p>Я согласен с условиями обработки и использования моих персональных данных</p>
+					</div>
+				</form>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<h2 class="accent-header">О нас</h2>
+			</div>
+			<div class="about-inner">
+				<div class="about-background-title">
+					<img src="images/about-bg-title.png" alt="">
+				</div>
+				<div class="about-descr">
+					<p>Компания ЕвроКран – это команда специалистов, обеспечивающих эффективное использование
+						высокопроизводительных немецких автокранов марки LIEBHERR.</p>
+					<p>Мы работаем с 2000 года и за это время не раз доказали свой профессионализм и компетентность: сегодня нам
+						доверяют крупнейшие предприятия России.</p>
+					<p>Мы обладаем собственным парком с более чем 50 единицами техники и находимся в черте Москвы. Поэтому мы
+						можем подать любую технику в любую точку города незамедлительно, что бывает весьма кстати в случае
+						возникновения каких-либо непредвиденных ситуаций.</p>
+				</div>
+				<div class="about-img">
+					<img class="about-img-img" src="images/about-img.png" alt="">
+					<img class="about-img-bg" src="images/about-bg-elem.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="services">
+			<img src="images/services-bg.png" alt="" class="services-top-title">
+			<div class="container">
+				<h2 class="services-header accent-header">Услуги</h2>
+				<div class="services-inner">
+
+					<div class="services-item">
+						<img src="images/services/item-1.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="services-item-link accent-link call-btn">Аренда мобильных автокранов Liebherr</a>
+						</div>
+					</div>
+					<div class="services-item">
+						<img src="images/services/item-2.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="services-item-link accent-link call-btn">Аренда гусеничных кранов Liebherr</a>
+						</div>
+					</div>
+					<div class="services-item">
+						<img src="images/services/item-3.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="accent-link call-btn">Аренда низкорамных тралов</a>
+						</div>
+					</div>
+					<div class="services-item">
+						<img src="images/services/item-4.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="services-item-link accent-link call-btn">Перевозка негабаритного и тяжеловесного груза</a>
+						</div>
+					</div>
+					<div class="services-item">
+						<img src="images/services/item-5.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="services-item-link accent-link call-btn">Разработка ППРК</a>
+						</div>
+					</div>
+					<div class="services-item">
+						<img src="images/services/item-6.png" alt="" class="services-item-img">
+						<div class="services-link-wrapper">
+							<a class="services-item-link accent-link call-btn">Выезд специалиста на объект</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<img src="images/services/services-bottom-title.png" alt="" class="services-bottom-title">
+		</section>
+
+		<section class="about-rent">
+			<div class="container">
+				<div class="about-rent-top-header">
+					<h2 class="about-rent-header accent-header">Аренда автокранов LIEBHERR в Москве</h2>
+					<p class="about-rent-text">Аренда автокранов решает разные задачи. Благодаря большой грузоподъемности техника
+						используется при установке и разборке башенных кранов, строительстве мостовых пролетов, монтаже дымовых труб
+						самонесущей конструкции, выполнении аварийно-восстановительных работ в Москве. </p>
+				</div>
+				<div class="about-rent-descr">
+					<h2 class="about-rent-header  accent-header">Аренда спецтехники Liebherr </h2>
+					<p class="about-rent-text">Liebherr («Либхерр») — известная немецкая машиностроительная компания. Ее автокраны
+						востребованы во всем мире благодаря своим уникальным возможностям. Основополагающие критерии их выбора —
+						скорость и качество работы. Крупные строительные компании и частные лица предпочитают арендовать
+						строительные краны «Либхерр». Их выбор обусловлен надежностью, высокой производительностью установок. Срок
+						службы агрегатов исчисляется десятилетиями, на протяжении которых они сохраняют свои характеристики и не
+						теряют качества.</p>
+					<p class="about-rent-text">На сегодняшний день мы реализовали сотни успешных проектов. Среди них:</p>
+					<ul class="about-rent-list">
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Предоставление автокрана Liebherr LR 1750 и автотрейлеров из собственного парка компании
+									«Казметрострой». Техника использовалась для демонтажа и перевозки проходческих щитов.</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Участие автокрана Liebherr LR 1750 и автотрейлеров в демонтаже проходческого щита на участке
+									метрополитена от станции «Выхино» до «Косино-Ухтомской».</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Использование Liebherr LTM 1500 в качестве основной мощности для производства работ при возведении
+									Лукомльской ГРЭС. В качестве арендатора выступала китайская машиностроительная инжиниринговая
+									компания.</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Аренда низкорамных тралов для транспортировки спецтехники официального дилера ТМ в России, компании
+									ООО «Либхерр-Русланд».</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Установка нового реактора гидрокрекинга на территории завода ОАО «Уфанефтехим».</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Демонтаж старых и монтаж новых чиллеров на крыше здания Mail.ru. Арендатор — строительный холдинг
+									КМТ.</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Монтаж мостовых балок на головном участке автомобильной скоростной дороги Москва-Санкт-Петербург,
+									произведенный с использованием кранов Liebherr.</p>
+							</div>
+						</li>
+						<li class="about-rent-list-item">
+							<div><img src="images/list-img.png" alt=""></div>
+							<div>
+								<p>Транспортировка и установка проходческого щита из Протвино в Москву для возведения Бутовской линии
+									метрополитена. Заказ выполнен компанией «Транстоннельстрой».</p>
+							</div>
+						</li>
+					</ul>
+					<p>Условия аренды оговариваются индивидуально. География предоставления услуги — Москва, Санкт-Петербург,
+						Екатеринбург, Нижний Новгород, Пермь, Воронеж, Челябинск, Краснодар, Ярославль, Самара, Уфа и другие города
+						РФ.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="questions">
+			<img class="questions-bg" src="images/questions-img-bg.svg" alt="">
+			<img class="questions-top-line" src="images/questions-top-line.png" alt="">
+			<div class="container">
+				<h2 class="questions-header accent-header">Остались вопросы?</h2>
+				<p class="questions-text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+				<form class="questions-form">
+					<input type="text" placeholder="Ваше имя">
+					<input type="text" placeholder="Ваш телефон*">
+					<input type="text" placeholder="Ваша почта">
+					<textarea name="" id="" cols="30" rows="5" placeholder="Оставьте ваш вопрос"></textarea>
+					<div class="agreement">
+						<input type="checkbox" name="" id="" checked>
+						<p>Я согласен с условиями обработки и использования моих персональных данных</p>
+					</div>
+					<button class="accent-btn questions-submit">Заказать звонок</button>
+				</form>
+			</div>
+
+			<img class="questions-bottom-line" src="images/questions-top-line.png" alt="">
+
+		</section>
+	</main>
+
+	<div id="map" class="subfooter">
+		<!-- <img src="images/map.png" alt=""> -->
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrapper">
+				<div class="footer-item">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
+					<p class="logo-text">Аренда мобильных и гусеничных кранов LIEBHERR</p>
+
+				</div>
+				<div class="footer-item">
+					<div class="footer-inner">
+						<div class="footer-column">
+							<h4>Клиентам</h4>
+							<ul class="footer-list">
+								<li><a href="about.html">О компании</a></li>
+								<li><a href="services.html">Услуги</a></li>
+								<li><a href="catalog.html">Каталог техники</a></li>
+								<li><a href="#">Аренда кранов</a></li>
+								<li><a href="objects.html">Наши работы</a></li>
+								<li><a href="price.html">Прайс-лист</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Техника</h4>
+							<ul class="footer-list">
+								<li><a href="#">Гусеничные краны</a></li>
+								<li><a href="#">Мобильные краны</a></li>
+								<li><a href="#">Низкорамные краны</a></li>
+								<li><a href="#">Модульные платформы</a></li>
+							</ul>
+						</div>
+						<div class="footer-column">
+							<h4>Услуги</h4>
+							<ul class="footer-list">
+								<li><a href="#">Аренда гусеничного крана</a></li>
+								<li><a href="#">Аренда мобильного крана</a></li>
+								<li><a href="#">Аренда башенного крана</a></li>
+								<li><a href="#">Перевозка негабаритного груза</a></li>
+								<li><a href="#">Разработка ппрк</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="footer-group">
+						<div class="footer-btn-social">
+							<button class="footer-btn call-btn">Свяжитесь со мной</button>
+							<div class="footer-social">
+								<a href="#"><i class="fa-brands fa-instagram"></i></a>
+								<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+								<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+								<a href="#"><i class="fa-brands fa-vk"></i></a>
+								<a href="#"><i class="fa-brands fa-yandex-international"></i></a>
+							</div>
+						</div>
+						<div class="footer-item contacts">
+							<div class="footer-column">
+								<h4>Контакты</h4>
+								<ul class="footer-list">
+									<li><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+									<li><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+									<li><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<p class="copyright">© 2000-2021 Все права защищены</p>
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/08aab8acab.js" crossorigin="anonymous"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+	</script>
+	<script src="js_map/map.js"></script>
+	<script src="js/mobile-menu.js"></script>
+	<script src="script_contacts/contacts.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
