@@ -7,15 +7,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Telran_FE_Project</title>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/catalog.css">
 </head>
 
 <body>
+	<div class="order">
+		<div class="button-container">
+			<button class="order-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="order-title">Арендовать спецтехнику</h3>
+		<p class="order-text">Оставьте заявку на звонок и мы ответим на все ваши вопросы в самое ближайшее время</p>
+		<input type="text" class="order-input" placeholder="Ваше имя" required>
+		<input type="number" class="order-input" placeholder="Ваш телефон*" required>
+		<input type="email" class="order-input" placeholder="Ваша почта" required>
+		<div class="agreement">
+			<input type="checkbox" checked class="order-check">
+			<p>Я согласен с условиями обработки и использования моих персональных данных</p>
+		</div>
+		<button class="order-btn">Оставить заявку</button>
+	</div>
+
+	<div class="order-report">
+		<div class="button-container">
+			<button class="report-close"><img src="media_contacts/modal/btn_Close.png" alt=""></button>
+		</div>
+		<h3 class="report-title">Ваша заявка отправлена</h3>
+		<p class="report-text">Мы позвоним вам в самое ближайшее время</p>
+		<button class="report-return">Вернуться</button>
+	</div>
 
 	<header class="header">
 		<div class="container">
 			<div class="header-inner">
 				<div class="logo">
-					<img src="images/logo.svg" alt="" class="logo-img">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
 					<p class="logo-text">Аренда спецтехники LIEBHERR c 2000 года</p>
 				</div>
 				<div class="header-wrapper">
@@ -33,16 +58,16 @@
 							ул. Куликовская, 12</p>
 					</div>
 					<div class="header-item">
-						<button class="header-btn">Свяжитесь со мной</button>
+						<button class="header-btn call-btn">Свяжитесь со мной</button>
 					</div>
 					<div class="header-item item-show">
 						<div class="header-item-img">
 							<img src="images/phone.png" alt="">
 						</div>
 						<ul class="phone-list">
-							<li class="phone-item"><a href="">+7 (499)929-96-66</a></li>
-							<li class="phone-item"><a href="">+7 (985)364-55-18</a></li>
-							<li class="phone-item"><a href="">+7 (985)226-20-30</a></li>
+							<li class="phone-item"><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+							<li class="phone-item"><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+							<li class="phone-item"><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
 						</ul>
 					</div>
 				</div>
@@ -61,23 +86,23 @@
 					</button>
 					<ul class="menu-list">
 						<li class="menu-item"><a href="catalog.html">Каталог</a></li>
-						<li class="menu-item"><a href="">Услуги</a></li>
+						<li class="menu-item"><a href="services.html">Услуги</a></li>
 						<li class="menu-item"><a href="about.html">О компании</a></li>
 						<li class="menu-item"><a href="objects.html">Объекты</a></li>
-						<li class="menu-item"><a href="">Цены</a></li>
+						<li class="menu-item"><a href="price.html">Цены</a></li>
 						<li class="menu-item"><a href="blog.html">Блог</a></li>
 						<li class="menu-item"><a href="contacts.html">Контакты</a></li>
 					</ul>
 				</div>
 
 				<ul class="menu-mobile-list" id="mobile-list">
-					<li><a href="#">Каталог</a></li>
-					<li><a href="#">Услуги</a></li>
-					<li><a href="#">О компании</a></li>
-					<li><a href="#">Объекты</a></li>
-					<li><a href="#">Цены</a></li>
-					<li><a href="#">Блог</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a href="catalog.html">Каталог</a></li>
+					<li><a href="services.html">Услуги</a></li>
+					<li><a href="about.html">О компании</a></li>
+					<li><a href="objects.html">Объекты</a></li>
+					<li><a href="price.html">Цены</a></li>
+					<li><a href="blog.html">Блог</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 
 				<div class="search">
@@ -85,7 +110,6 @@
 					<img src="images/magnifying-glass.png" alt="" class="input-icon">
 				</div>
 			</div>
-
 
 			<div class="breadcrumbs">
 				<div class="breadcrumbs-inner">
@@ -99,24 +123,175 @@
 					</ul>
 				</div>
 			</div>
+
 		</div>
+
 	</nav>
 
-
-
 	<main>
+		<section class="catalog-bars">
+			<div class="container">
+				<h2 class="catalog-title">Каталог техники</h2>
+				<div class="bars-inner">
+					<div class="bar-item">40 тонн</div>
+					<div class="bar-item">50 тонн</div>
+					<div class="bar-item">60 тонн</div>
+					<div class="bar-item">65 тонн</div>
+					<div class="bar-item">68 тонн</div>
+					<div class="bar-item">70 тонн</div>
+					<div class="bar-item">80 тонн</div>
+					<div class="bar-item">82,5 тонн</div>
+					<div class="bar-item">84 тонн</div>
+					<div class="bar-item">85 тонн</div>
+					<div class="bar-item">90 тонн</div>
+					<div class="bar-item">93,8 тонн</div>
+					<div class="bar-item">95 тонн</div>
+					<div class="bar-item">100 тонн</div>
+					<div class="bar-item">112,5 тонн</div>
+					<div class="bar-item">120 тонн</div>
+					<div class="bar-item">131,6 тонн</div>
+					<div class="bar-item">150 тонн</div>
+					<div class="bar-item">160 тонн</div>
+					<div class="bar-item">180 тонн</div>
+					<div class="bar-item">200 тонн</div>
+					<div class="bar-item">220 тонн</div>
+					<div class="bar-item">250 тонн</div>
+					<div class="bar-item">280 тонн</div>
+					<div class="bar-item">300 тонн</div>
+					<div class="bar-item">350 тонн</div>
+					<div class="bar-item">400 тонн</div>
+					<div class="bar-item">500 тонн</div>
+					<div class="bar-item">750 тонн</div>
+					<div class="bar-item">Все</div>
+				</div>
+			</div>
+		</section>
+		<section class="catalog-info">
+			<div class="container">
+				<div class="catalog-info-inner">
+					<div class="catalog-aside">
+						<div class="catalog-park">
+							<div class="catalog-park-title">Парк техники</div>
+							<ul class="catalog-park-items">
+								<li class="catalog-park-item">
+									<div class="park-item-inner">
+										<p class="park-item-title">Apeндa мобильных aвтoкpaнов LIEBHERR LTM</p>
+										<i class="fa-regular fa-plus"></i>
+										<i class="fa-solid fa-minus"></i>
+									</div>
+								</li>
+								<li class="catalog-park-item">
+									<div class="park-item-inner">
+										<p class="park-item-title">Apeндa гусеничных кpaнов LIEBHERR LR</p>
+										<i class="fa-regular fa-plus"></i>
+										<i class="fa-solid fa-minus"></i>
+									</div>
+								</li>
+								<li class="catalog-park-item">
+									<div class="park-item-inner">
+										<p class="park-item-title">Аренда низкорамных тралов</p>
+										<i class="fa-regular fa-plus"></i>
+										<i class="fa-solid fa-minus"></i>
+									</div>
+								</li>
+							</ul>
+						</div>
 
+						<div class="catalog-params">
+							<div class="catalog-park-title">Параметры</div>
+							<div class="catalog-ranges">
+
+								<div class="range_container">
+									<p class="ranges-title">Грузоподъемность т.</p>
+									<div class="form_control">
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="fromInput" value="40"
+												min="40" max="750" />
+										</div>
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="toInput" value="750" min="40"
+												max="100" />
+										</div>
+									</div>
+									<div class="slider-range-container">
+										<div class="sliders_control">
+											<input id="fromSlider" type="range" value="40" min="40" max="750" />
+											<input id="toSlider" type="range" value="750" min="0" max="750" />
+										</div>
+									</div>
+								</div>
+
+								<div class="range_container">
+									<p class="ranges-title">Высота подъема, м.</p>
+									<div class="form_control">
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="fromInput" value="3" min="3"
+												max="134" />
+										</div>
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="toInput" value="134" min="3"
+												max="40" />
+										</div>
+									</div>
+									<div class="slider-range-container">
+										<div class="sliders_control">
+											<input id="fromSlider" type="range" value="3" min="3" max="134" />
+											<input id="toSlider" type="range" value="134" min="3" max="134" />
+										</div>
+									</div>
+								</div>
+
+								<div class="range_container">
+									<p class="ranges-title">Вылет, м.</p>
+									<div class="form_control">
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="fromInput" value="39"
+												min="39" max="96" />
+										</div>
+										<div class="form_control_container">
+											<div class="form_control_container__time"></div>
+											<input class="form_control_container__time__input" type="number" id="toInput" value="96" min="39"
+												max="96" />
+										</div>
+									</div>
+									<div class="slider-range-container">
+										<div class="sliders_control">
+											<input id="fromSlider" type="range" value="39" min="39" max="96" />
+											<input id="toSlider" type="range" value="96" min="39" max="96" />
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+
+					</div>
+					<div class="catalog-cards">
+						<div class="cards-appearance">
+							<i class="fa-solid fa-grip"></i>
+							<i class="fa-solid fa-list"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
-	<div class="subfooter">
-		<img src="images/map.png" alt="">
+	<div id="map" class="subfooter">
+		<!-- <img src="images/map.png" alt=""> -->
 	</div>
 
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-wrapper">
 				<div class="footer-item">
-					<img src="images/logo.svg" alt="" class="logo-img">
+					<a href="index.html"><img src="images/logo.svg" alt="" class="logo-img"></a>
 					<p class="logo-text">Аренда мобильных и гусеничных кранов LIEBHERR</p>
 
 				</div>
@@ -126,11 +301,11 @@
 							<h4>Клиентам</h4>
 							<ul class="footer-list">
 								<li><a href="about.html">О компании</a></li>
-								<li><a href="#">Услуги</a></li>
+								<li><a href="services.html">Услуги</a></li>
 								<li><a href="catalog.html">Каталог техники</a></li>
 								<li><a href="#">Аренда кранов</a></li>
 								<li><a href="objects.html">Наши работы</a></li>
-								<li><a href="#">Прайс-лист</a></li>
+								<li><a href="price.html">Прайс-лист</a></li>
 								<li><a href="contacts.html">Контакты</a></li>
 							</ul>
 						</div>
@@ -158,7 +333,7 @@
 				<div class="footer-item">
 					<div class="footer-group">
 						<div class="footer-btn-social">
-							<button class="footer-btn">Свяжитесь со мной</button>
+							<button class="footer-btn call-btn">Свяжитесь со мной</button>
 							<div class="footer-social">
 								<a href="#"><i class="fa-brands fa-instagram"></i></a>
 								<a href="#"><i class="fa-brands fa-square-twitter"></i></a>
@@ -171,9 +346,9 @@
 							<div class="footer-column">
 								<h4>Контакты</h4>
 								<ul class="footer-list">
-									<li><a href="#">+7 (499)929-96-66</a></li>
-									<li><a href="#">+7 (985)364-55-18</a></li>
-									<li><a href="#">+7 (985)226-20-30</a></li>
+									<li><a href="tel:+74999299666">+7 (499)929-96-66</a></li>
+									<li><a href="tel:+79853645518">+7 (985)364-55-18</a></li>
+									<li><a href="tel:+79852262030">+7 (985)226-20-30</a></li>
 								</ul>
 							</div>
 						</div>
@@ -187,7 +362,12 @@
 	</footer>
 
 	<script src="https://kit.fontawesome.com/08aab8acab.js" crossorigin="anonymous"></script>
-	<script src="js/main.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU">
+	</script>
+	<script src="js_map/map.js"></script>
+	<script src="js/mobile-menu.js"></script>
+	<script src="script_contacts/contacts.js"></script>
+	<script src="js/catalog.js"></script>
 </body>
 
 </html>
